@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>餐酒館</title>
+    <meta charset="UTF-8" />
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap5.0 導入程式 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!--導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#"
+          ><img width="60px" height="60px" src="images/logo.png"
+        /></a>
+
+        <!-- 手機版 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#linkbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 桌上型電腦版 -->
+
+        <div class="collapse navbar-collapse" id="linkbar">
+          <!-- 列出內容 -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+          </ul>
+
+          <!-- 列出到右邊 -->
+          <form style="width: 300px" class="input-group">
+            <input class="form-control me-3" type="search" placeholder="搜尋" />
+            <button class="btn btn-success" type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 輪播 -->
+    <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+      <!-- 圖片投影 元件1-->
+      <div class="carousel-inner">
+        <!-- 第一張圖片 active -->
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img class="slide-pic" src="images/slide1.jpg" alt="slide1" />
+          <div class="carousel-caption">
+            <h2>Steak</h2>
+          </div>
+        </div>
+        <!-- 第二張圖片  -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="slide-pic" src="images/slide2.jpg" alt="slide2" />
+          <div class="carousel-caption">
+            <h2>Wine</h2>
+          </div>
+        </div>
+        <!-- 第三張圖片  -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="slide-pic" src="images/slide3.jpg" alt="slide3" />
+          <div class="carousel-caption">
+            <h2>Dessert</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- 左右按鈕 元件2 -->
+      <!-- 左按鍵 -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#slideshow"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <!-- 右按鍵 -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#slideshow"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <!-- 指示按鍵 元件3 -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#slideshow"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slideshow"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slideshow"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+    </div>
+
+    <!-- 美味菜單 -->
+    <div class="container">
+      <h1>美味菜單</h1>
+      <!-- 標籤分頁 導覽列 -->
+      <div class="nav nav-tabs nav-justified">
+        <button
+          class="nav-link active"
+          data-bs-toggle="tab"
+          data-bs-target="#menu1"
+          aria-selected="true"
+        >
+          前菜
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#menu2"
+          aria-selected="false"
+        >
+          主餐
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#menu3"
+          aria-selected="false"
+        >
+          甜點&飲料
+        </button>
+      </div>
+      <!-- 分頁內容 -->
+      <div class="tab-content">
+        <!-- 前菜內容 -->
+        <div class="tab-pane fade show active" id="menu1">
+          <h3>前菜</h3>
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://icrvb3jy.xinmedia.com/solomo/article/183727/CFF545C6-3D3E-F8C1-BF08-0D9E607FAA58.jpeg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://icrvb3jy.xinmedia.com/solomo/article/183727/5C403B5A-75EC-47EC-DF41-B6C68CD91120.jpeg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://icrvb3jy.xinmedia.com/solomo/article/183727/9D635551-0615-23AA-F15E-24A6F5B7EFD0.jpeg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://tasteofjapan.maff.go.jp/assets/01_TOJ_kaiseki_DSC4470t.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://www.mirrormedia.mg/assets/images/20170907154757-cae4ca8ae1c416742581df9a21518cd6-tablet.JPG"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://www.mirrormedia.com.tw/assets/images/20170907154704-41fb9f34f5696c582aabcd360d9c569d-desktop.JPG"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://taster.life/wp-content/uploads/2022/03/Grill-Ukai-%E8%A5%BF%E9%A4%90_%E6%99%9A%E9%96%93%E5%A5%97%E9%A4%90%E5%89%8D%E8%8F%9C-%E9%AE%AE%E8%9D%A6%E5%BD%A9%E6%BC%BE%E7%95%AA%E8%8C%84%E6%B2%99%E6%8B%89.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://svcstrg.cld.navitime.jp/imgfile/02301_1406225_02.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://www.luxurywatcher.com/uploads/article/2/5/25958/1544420384124.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://www.luxurywatcher.com/uploads/article/2/5/25958/1544420384129.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://www.luxurywatcher.com/uploads/article/2/5/25958/1544420384128.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://www.luxurywatcher.com/uploads/article/2/5/25958/1544420384125.jpg"
+            alt=""
+          />
+        </div>
+        <!-- 主餐內容 -->
+        <div class="tab-pane fade show" id="menu2">
+          <h3>主餐</h3>
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://imoki.tw/wp-content/uploads/pixnet/062495687102487990836bed03d6118d.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://www.mirrormedia.com.tw/assets/images/20170907154815-296a1375839a552ee833a861656d1a8d-mobile.JPG"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://www.mirrormedia.com.tw/assets/images/20170907154920-8a12343d70a1f2e7003ad0e78107b362-mobile.JPG"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://www.mirrormedia.com.tw/assets/images/20170907155011-c469524fa62c30f2c694694dee8d65dd-mobile.JPG"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://www.mirrormedia.com.tw/assets/images/20170426174528-46f3e2cfe9931edd82f8d730b27b7330-mobile.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://www.alberthsieh.com/wp-content/gallery/senjpf/senjpf_0242.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://imoki.tw/wp-content/uploads/pixnet/1ab2614c5562617026197cc470a0c31f.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://picsig.playplus.solutions/uploads/image/file/13607/something.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://angelala.tw/wp-content/uploads/2022/10/aw1.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://lh5.ggpht.com/Wgtk-seLWhiFcjUxQmDVUERCS1otRTzz4xoKLj6lzf6_qVLlQu-F82820oGiU6u2glkzgBt7_qk7f22gHDgjI9JK4etIaSI=s600"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInX"
+            src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/285132/db15b6cc5d764787.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__flipInY"
+            src="https://images.squarespace-cdn.com/content/v1/5e762e3d21acd35898d85e9c/1644725526831-3CBO0XXULUEL3QLZ4KJZ/DSC06174.jpg"
+            alt=""
+          />
+        </div>
+        <!-- 甜點&飲料內容 -->
+        <div class="tab-pane fade show" id="menu3">
+          <h3>甜點&飲料</h3>
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://img.ltn.com.tw/Upload/food/page/2017/01/23/170123-5226-1-nUO2R.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://media-cdn.tripadvisor.com/media/photo-s/0e/6c/92/9b/seminar.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://media.vogue.com.tw/photos/63b012e82175c0f69ab80cd1/4:3/w_2415,h_1811,c_limit/IMG_0394.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://inews.gtimg.com/newsapp_bt/0/12483729257/1000"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://img95.699pic.com/photo/50014/8672.jpg_wh860.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://cdn2.ettoday.net/images/3584/3584160.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://robert-parker-michelin-hk-prod.s3.amazonaws.com/media/image/2017/09/25/f2583153ff9b4f0c865be566a9582f99_Churros.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://robert-parker-michelin-hk-prod.s3.amazonaws.com/media/image/2017/09/25/d89314229207459c850e56e600a31bac_Flan.jpg"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://i0.wp.com/travelcom.com.tw/wp-content/uploads/2018/08/06.%E9%99%A4%E4%BA%86%E6%97%A9%E5%8D%88%E9%A4%90%E9%82%84%E6%9C%89%E7%94%9C%E9%BB%9E%E9%A3%B2%E6%96%99%E4%B9%9F%E5%BE%88%E5%8F%97%E6%AD%A1%E8%BF%8E%E3%80%82.png?ssl=1"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/123608024_3722491387781206_2037519335640565064_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=973b4a&_nc_ohc=wZwBBOBUgtgAX_PbPk1&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAMn4vSKgwl-Y9aFVnogXk8sSL6zytW79mM8Iu65Mc3wg&oe=644E7A1E"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://imgs.cwgv.com.tw/articles/35/14935/preview/14935.png"
+            alt=""
+          />
+          <img
+            class="animate__animated animate__zoomIn"
+            src="https://images.chinatimes.com/newsphoto/2020-04-30/656/20200430005833.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- <hr / style="color: rgb(255, 255, 255);"> -->
+    <!-- 4張介紹 2張環境-->
+    <div class="introduce">
+      <div class="container">
+        <div class="row justify-content-center flex">
+          <div
+            class="introduce"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce1.jpg" alt="" />
+            <p>
+              美味前菜，不同種類異國香料搭配台灣道地美食，將食慾提高到最大化。
+            </p>
+          </div>
+          <div
+            class="introduce"
+            data-aos="zoom-out-up"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce2.jpg" alt="" />
+            <p>關鍵主餐，嚴選上等牛肉質地韌嫩，洽到好處的彈性滿足你的味蕾。</p>
+          </div>
+          <div
+            class="introduce"
+            data-aos="zoom-out-down"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce3.jpg" alt="" />
+            <p>原創配方，天然原料，冰涼氣泡飲，在餐前刺激你的味蕾!</p>
+          </div>
+          <div
+            class="introduce"
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce4.jpg" alt="" />
+            <p>純手工甜點，以法國餐飲為基底，融合台灣口味，獨創新興甜點美學!</p>
+          </div>
+        </div>
+        <div
+          class="environment"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+        >
+          <img src="./images/environment1.jpeg" alt="" />
+          <p>高樓層環景，陽光環繞</p>
+        </div>
+        <div
+          class="environment"
+          data-aos="zoom-out-left"
+          data-aos-duration="2000"
+        >
+          <img src="./images/environment2.jpg" alt="" />
+          <p>燈光美氣氛佳</p>
+        </div>
+      </div>
+    </div>
+    <!-- 主廚 -->
+    <div class="container">
+      <div class="chef justify-content-start">
+        <div class="chefImg" data-aos="zoom-in-right" data-aos-duration="2000">
+          <img src="./images/chef.jpg" alt="" />
+        </div>
+        <div class="chefIntroduce">
+          <p id="app"></p>
+        </div>
+      </div>
+    </div>
+
+    <!--  footer -->
+    <footer class="text-center">
+      <p>Kevin Chang 2023</p>
+    </footer>
+    <!-- 物件移動 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- 打字機 -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      var app = document.getElementById("app");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 50,
+      });
+
+      typewriter
+        .pauseFor(2500)
+        .typeString(
+          "這是廚師 凱文先生，一位激情洋溢的烹飪藝術家，擁有超過10年的行業經驗。他非常注重新鮮的食材和創新的口味組合，他的菜式一定會令人印象深刻。無論是經典食譜還是現代新派菜式，他對品質的承諾和對細節的關注都使每道菜成為一件藝術品"
+        )
+        .pauseFor(300)
+        .start();
+    </script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

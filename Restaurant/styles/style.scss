@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+}
+.content {
+  height: 800px;
+}
+footer {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 15px;
+  height: 70px;
+
+  bottom: 0px;
+  p {
+    font-size: 25px;
+  }
+}
+.sidenav {
+  padding-top: 30px;
+  background-color: rgb(174, 174, 174);
+  h4 {
+    text-align: center;
+    color: indigo;
+    padding: 20px;
+  }
+  a {
+    text-align: left;
+    text-decoration: none;
+    color: indigo;
+    font-size: 22px;
+    padding: 20px;
+    &:hover {
+      color: yellow;
+    }
+  }
+}
+.page {
+  background-color: rgb(222, 222, 222);
+  width: 100%;
+  padding: 8px;
+
+  &:hover {
+    background-color: indigo;
+    transition: 1s;
+  }
+}
+.main-content {
+  background-color: white;
+  padding: 20px;
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+}
+.ad {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .sidenav {
+    height: auto;
+  }
+  .content {
+    height: auto;
+  }
+  .page {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1386px) {
+  footer {
+    background-color: black;
+    color: white;
+  }
+}
+
+@import "./navbar";
+@import "./slide";
+@import "./menu";
+@import "./introduce";
+@import "./chef";
+@import "./cssanimate";
