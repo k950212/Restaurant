@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>餐酒館</title>
+    <meta charset="UTF-8" />
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap5.0 導入程式 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+      <!-- 圖片投影 元件1-->
+      <div class="carousel-inner">
+        <!-- 第一張圖片 active -->
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img class="slide-pic" src="images/slide1.jpg" alt="slide1" />
+          <div class="carousel-caption">
+            <h2>Steak</h2>
+          </div>
+        </div>
+        <!-- 第二張圖片  -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="slide-pic" src="images/slide2.jpg" alt="slide2" />
+          <div class="carousel-caption">
+            <h2>Wine</h2>
+          </div>
+        </div>
+        <!-- 第三張圖片  -->
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="slide-pic" src="images/slide3.jpg" alt="slide3" />
+          <div class="carousel-caption">
+            <h2>Dessert</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- 左右按鈕 元件2 -->
+      <!-- 左按鍵 -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#slideshow"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <!-- 右按鍵 -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#slideshow"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <!-- 指示按鍵 元件3 -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#slideshow"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slideshow"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slideshow"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 輪播 -->
+
+      <!-- 美味菜單 -->
+      <div>
+        <h1>美味菜單</h1>
+        <!-- 標籤分頁 導覽列 -->
+        <div class="nav nav-tabs nav-justified">
+          <button
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#menu1"
+            aria-selected="true"
+          >
+            前菜
+          </button>
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#menu2"
+            aria-selected="false"
+          >
+            主餐
+          </button>
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#menu3"
+            aria-selected="false"
+          >
+            甜點&飲料
+          </button>
+        </div>
+        <!-- 分頁內容 -->
+        <div class="tab-content">
+          <!-- 前菜內容 -->
+          <div class="tab-pane fade show active" id="menu1">
+            <h3>前菜</h3>
+            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1">
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Appetizer1.jpeg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Appetizer2.jpeg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Appetizer3.jpeg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Appetizer4.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Appetizer5.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Appetizer6.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Appetizer7.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Appetizer8.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Appetizer9.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Appetizer10.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Appetizer11.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Appetizer12.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- 主餐內容 -->
+          <div class="tab-pane fade show" id="menu2">
+            <h3>主餐</h3>
+            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1">
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Main1.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX x"
+                src="./images/MENU/Main2.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Main3.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Main4.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Main5.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Main6.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Main7.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Main8.jpg"
+                alt=""
+              />
+
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Main9.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Main10.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Main11.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Main12.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- 甜點&飲料內容 -->
+          <div class="tab-pane fade show" id="menu3">
+            <h3>甜點&飲料</h3>
+            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1">
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Dessert1.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Dessert2.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Dessert3.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Dessert4.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Dessert5.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Dessert6.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Dessert7.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Dessert8.jpg"
+                alt=""
+              />
+
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Dessert9.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Dessert10.jpg"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInY"
+                src="./images/MENU/Dessert11.png"
+                alt=""
+              />
+              <img
+                class="animate__animated animate__flipInX"
+                src="./images/MENU/Dessert12.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <hr / style="color: rgb(255, 255, 255);"> -->
+      <!-- 4張介紹 2張環境-->
+
+      <div class="introduces" style="overflow-x: hidden; overflow-y: hidden">
+        <div
+          class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 justify-content-center flex"
+        >
+          <div
+            class="introduce"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce1.jpg" alt="" />
+            <p>
+              美味前菜，不同種類異國香料搭配台灣道地美食，將食慾提高到最大化。
+            </p>
+          </div>
+          <div
+            class="introduce"
+            data-aos="zoom-out-up"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce2.jpg" alt="" />
+            <p>關鍵主餐，嚴選上等牛肉質地韌嫩，洽到好處的彈性滿足你的味蕾。</p>
+          </div>
+          <div
+            class="introduce"
+            data-aos="zoom-out-down"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce3.jpg" alt="" />
+            <p>原創配方，天然原料，冰涼氣泡飲，在餐前刺激你的味蕾!</p>
+          </div>
+          <div
+            class="introduce"
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+          >
+            <img src="./images/introduce4.jpg" alt="" />
+            <p>純手工甜點，以法國餐飲為基底，融合台灣口味，獨創新興甜點美學!</p>
+          </div>
+        </div>
+        <div
+          class="environment"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+        >
+          <img src="./images/environment1.jpeg" alt="" />
+          <p>高樓層環景，陽光環繞</p>
+        </div>
+        <div
+          class="environment"
+          data-aos="zoom-out-left"
+          data-aos-duration="2000"
+        >
+          <img src="./images/environment2.jpg" alt="" />
+          <p>燈光美氣氛佳</p>
+        </div>
+      </div>
+
+      <!-- 主廚 -->
+
+      <div class="chef justify-content-start row p-5">
+        <div
+          class="chefImg col-lg-6"
+          data-aos="zoom-in-right"
+          data-aos-duration="2000"
+        >
+          <img src="./images/chef.jpg" alt="" />
+        </div>
+        <div class="chefIntroduce col-lg-6">
+          <p id="app"></p>
+        </div>
+      </div>
+      <!-- 地圖 -->
+      <div class="row pb-5">
+        <p class="h1 text-white">店家地址：</p>
+        <div class="col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28921.263699011633!2d121.55171654391616!3d25.028712830445873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abadec7543c5%3A0x408dbd7aa34838cd!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A!5e0!3m2!1szh-TW!2stw!4v1685698404144!5m2!1szh-TW!2stw"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col-lg-6">
+          <p class="h4 m-5 text-white">
+            歡迎光臨我們的餐廳！在這裡，您將體驗到優雅舒適的用餐環境，我們的廚師團隊將為您準備新鮮美味的料理，將您的味蕾帶入無盡的享受之中。無論是浪漫的晚餐、家庭聚餐或商務宴會，我們都會提供無微不至的服務，讓您的用餐體驗與眾不同。請即來訪，與我們一同創造美好的味覺旅程！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  footer -->
+    <footer class="text-center">
+      <p>Kevin Chang 2023</p>
+    </footer>
+    <!-- 物件移動 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- 打字機 -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      var app = document.getElementById("app");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 50,
+      });
+
+      typewriter
+        .pauseFor(2500)
+        .typeString(
+          "這是廚師 凱文先生，一位激情洋溢的烹飪藝術家，擁有超過10年的行業經驗。他非常注重新鮮的食材和創新的口味組合，他的菜式一定會令人印象深刻。無論是經典食譜還是現代新派菜式，他對品質的承諾和對細節的關注都使每道菜成為一件藝術品"
+        )
+        .pauseFor(300)
+        .start();
+    </script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
